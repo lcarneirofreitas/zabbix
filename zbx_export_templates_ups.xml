@@ -25,7 +25,7 @@
                 <item>
                     <name>Capacidade Baterias (%)</name>
                     <type>4</type>
-                    <snmp_community>upspublicrf</snmp_community>
+                    <snmp_community>public</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.2.1.33.1.2.4.0</snmp_oid>
                     <key>upscapacity</key>
@@ -64,7 +64,7 @@
                 <item>
                     <name>Frequência de Entrada (Hz)</name>
                     <type>4</type>
-                    <snmp_community>upspublicrf</snmp_community>
+                    <snmp_community>public</snmp_community>
                     <multiplier>1</multiplier>
                     <snmp_oid>.1.3.6.1.2.1.33.1.3.3.1.2.1</snmp_oid>
                     <key>upsfreqentrada</key>
@@ -103,7 +103,7 @@
                 <item>
                     <name>Frequência de Saida (Hz)</name>
                     <type>4</type>
-                    <snmp_community>upspublicrf</snmp_community>
+                    <snmp_community>public</snmp_community>
                     <multiplier>1</multiplier>
                     <snmp_oid>.1.3.6.1.2.1.33.1.4.2.0</snmp_oid>
                     <key>upsfreqsaida</key>
@@ -142,7 +142,7 @@
                 <item>
                     <name>Load (%)</name>
                     <type>4</type>
-                    <snmp_community>upspublicrf</snmp_community>
+                    <snmp_community>public</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.2.1.33.1.4.4.1.5.1</snmp_oid>
                     <key>upsload</key>
@@ -184,7 +184,7 @@ snmptranslate -On UPS-MIB::upsOutputPercentLoad.1 -m /var/lib/mibs/ietf/UPS-MIB<
                 <item>
                     <name>Status Baterias</name>
                     <type>4</type>
-                    <snmp_community>upspublicrf</snmp_community>
+                    <snmp_community>public</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.2.1.33.1.2.1.0</snmp_oid>
                     <key>upsbattery</key>
@@ -223,7 +223,7 @@ snmptranslate -On UPS-MIB::upsOutputPercentLoad.1 -m /var/lib/mibs/ietf/UPS-MIB<
                 <item>
                     <name>Temperatura Nobreak (C°)</name>
                     <type>4</type>
-                    <snmp_community>upspublicrf</snmp_community>
+                    <snmp_community>public</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.2.1.33.1.2.7.0</snmp_oid>
                     <key>upstemp</key>
@@ -262,7 +262,7 @@ snmptranslate -On UPS-MIB::upsOutputPercentLoad.1 -m /var/lib/mibs/ietf/UPS-MIB<
                 <item>
                     <name>Tensão de Entrada (V)</name>
                     <type>4</type>
-                    <snmp_community>upspublicrf</snmp_community>
+                    <snmp_community>public</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.2.1.33.1.3.3.1.3.1</snmp_oid>
                     <key>upstensaoentrada</key>
@@ -301,7 +301,7 @@ snmptranslate -On UPS-MIB::upsOutputPercentLoad.1 -m /var/lib/mibs/ietf/UPS-MIB<
                 <item>
                     <name>Tensão de Saida (V)</name>
                     <type>4</type>
-                    <snmp_community>upspublicrf</snmp_community>
+                    <snmp_community>public</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.2.1.33.1.4.4.1.2.1</snmp_oid>
                     <key>upstensaosaida</key>
