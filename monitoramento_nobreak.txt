@@ -1,0 +1,100 @@
+##########################################
+### monitoramento nobreak ups ts shara ###
+##########################################
+
+
+UPS LOAD %
+++++++++++
+ 
+sudo snmpwalk -v2c -c public nobreak.intranet -m /var/lib/mibs/ietf/UPS-MIB UPS-MIB::upsOutputPercentLoad.1
+UPS-MIB::upsOutputPercentLoad.1 = INTEGER: 22 percent
+.1.3.6.1.2.1.33.1.4.4.1.5.1
+
+snmptranslate -On UPS-MIB::upsOutputPercentLoad.1 -m /var/lib/mibs/ietf/UPS-MIB
+.1.3.6.1.2.1.33.1.4.4.1.5.1
+
+
+warning = 60 %
+critical = 85 %
+
+
+UPS TEMPERATURE Cº
++++++++++++++++++
+
+sudo snmpwalk -v2c -c public nobreak.intranet -m /var/lib/mibs/ietf/UPS-MIB UPS-MIB::upsBatteryTemperature.0
+UPS-MIB::upsBatteryTemperature.0 = INTEGER: 24 degrees Centigrade
+
+warning = 50 Cº
+critical = 70 Cº
+
+snmptranslate -On UPS-MIB::upsBatteryTemperature.0 -m /var/lib/mibs/ietf/UPS-MIB
+.1.3.6.1.2.1.33.1.2.7.0
+
+
+UPS BATTERY CAPACITY %
+++++++++++++++++++++++
+
+sudo snmpwalk -v2c -c public nobreak.intranet -m /var/lib/mibs/ietf/UPS-MIB UPS-MIB::upsEstimatedChargeRemaining.0
+UPS-MIB::upsEstimatedChargeRemaining.0 = INTEGER: 93 percent
+
+
+warning = 60 
+critical = 20
+
+snmptranslate -On UPS-MIB::upsEstimatedChargeRemaining.0 -m /var/lib/mibs/ietf/UPS-MIB 
+.1.3.6.1.2.1.33.1.2.4.0
+
+
+UPS BATTERY STATUS
+++++++++++++++++++
+
+sudo snmpwalk -v2c -c public nobreak.intranet -m /var/lib/mibs/ietf/UPS-MIB UPS-MIB::upsBatteryStatus.0
+UPS-MIB::upsBatteryStatus.0 = INTEGER: batteryNormal(2)
+
+critical = diferente de batteryNormal
+
+snmptranslate -On UPS-MIB::upsBatteryStatus.0 -m /var/lib/mibs/ietf/UPS-MIB 
+.1.3.6.1.2.1.33.1.2.1.0
+
+
+UPS INPUT VOLT(V)
++++++++++++++++++
+
+snmpwalk -v2c -c public nobreak.intranet -m /var/lib/mibs/ietf/UPS-MIB UPS-MIB::upsInputVoltage.1
+UPS-MIB::upsInputVoltage.1 = INTEGER: 210 RMS Volts
+
+warning = < 200 V e > 240 V
+critical = < 180 V e > 260 V
+
+
+UPS OUTPUT VOLT(V)
+++++++++++++++++++
+
+snmpwalk -v2c -c public nobreak.intranet -m /var/lib/mibs/ietf/UPS-MIB UPS-MIB::upsOutputVoltage.1
+UPS-MIB::upsOutputVoltage.1 = INTEGER: 116 RMS Volts
+
+warning = < 110 V e > 130 V
+critical = < 90 V e > 150 V
+
+
+UPS INPUT FREQUENCY(Hz)
++++++++++++++++++++++++
+
+snmpwalk -v2c -c public nobreak.intranet -m /var/lib/mibs/ietf/UPS-MIB UPS-MIB::upsInputFrequency.1
+UPS-MIB::upsInputFrequency.1 = INTEGER: 605 0.1 Hertz
+
+warning = < 50 Hz e > 70 Hz
+critical = < 40 Hz e > 80 Hz
+ 
+
+UPS OUTPUT FREQUENCY(Hz)
++++++++++++++++++++++++
+
+snmpwalk -v2c -c public nobreak.intranet -m /var/lib/mibs/ietf/UPS-MIB UPS-MIB::upsOutputFrequency.0
+UPS-MIB::upsOutputFrequency.0 = INTEGER: 605 0.1 Hertz
+
+warning = < 50 Hz e > 70 Hz
+critical = < 40 Hz e > 80 Hz
+
+
+
