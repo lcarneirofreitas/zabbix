@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>2.0</version>
+    <date>2014-09-18T13:32:44Z</date>
+    <groups>
+        <group>
+            <name>Nobreak</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template Nobreaks UPS</template>
+            <name>Template Nobreaks UPS</name>
+            <groups>
+                <group>
+                    <name>Nobreak</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>Nobreak</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Capacidade Baterias (%)</name>
+                    <type>4</type>
+                    <snmp_community>upspublicrf</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.2.1.33.1.2.4.0</snmp_oid>
+                    <key>upscapacity</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>%</units>
+                    <delta>0</delta>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Nobreak</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Frequência de Entrada (Hz)</name>
+                    <type>4</type>
+                    <snmp_community>upspublicrf</snmp_community>
+                    <multiplier>1</multiplier>
+                    <snmp_oid>.1.3.6.1.2.1.33.1.3.3.1.2.1</snmp_oid>
+                    <key>upsfreqentrada</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>Hz</units>
+                    <delta>0</delta>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privpassphrase/>
+                    <formula>0.1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Nobreak</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Frequência de Saida (Hz)</name>
+                    <type>4</type>
+                    <snmp_community>upspublicrf</snmp_community>
+                    <multiplier>1</multiplier>
+                    <snmp_oid>.1.3.6.1.2.1.33.1.4.2.0</snmp_oid>
+                    <key>upsfreqsaida</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>Hz</units>
+                    <delta>0</delta>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privpassphrase/>
+                    <formula>0.1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Nobreak</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Load (%)</name>
+                    <type>4</type>
+                    <snmp_community>upspublicrf</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.2.1.33.1.4.4.1.5.1</snmp_oid>
+                    <key>upsload</key>
+                    <delay>30</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>%</units>
+                    <delta>0</delta>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Como chegar ao oid:&#13;
+&#13;
+&#13;
+snmptranslate -On UPS-MIB::upsOutputPercentLoad.1 -m /var/lib/mibs/ietf/UPS-MIB</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Nobreak</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Status Baterias</name>
+                    <type>4</type>
+                    <snmp_community>upspublicrf</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.2.1.33.1.2.1.0</snmp_oid>
+                    <key>upsbattery</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>4</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Nobreak</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Temperatura Nobreak (C°)</name>
+                    <type>4</type>
+                    <snmp_community>upspublicrf</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.2.1.33.1.2.7.0</snmp_oid>
+                    <key>upstemp</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>C°</units>
+                    <delta>0</delta>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Nobreak</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Tensão de Entrada (V)</name>
+                    <type>4</type>
+                    <snmp_community>upspublicrf</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.2.1.33.1.3.3.1.3.1</snmp_oid>
+                    <key>upstensaoentrada</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>V</units>
+                    <delta>0</delta>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Nobreak</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Tensão de Saida (V)</name>
+                    <type>4</type>
+                    <snmp_community>upspublicrf</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.2.1.33.1.4.4.1.2.1</snmp_oid>
+                    <key>upstensaosaida</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>V</units>
+                    <delta>0</delta>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Nobreak</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+            </items>
+            <discovery_rules/>
+            <macros/>
+            <templates/>
+            <screens/>
+        </template>
+    </templates>
+    <triggers>
+        <trigger>
+            <expression>{Template Nobreaks UPS:upscapacity.last(0)}&lt;20</expression>
+            <name>Capacidade Baterias menor que 20 %</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description>Alerta se Item for menor que 20</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template Nobreaks UPS:upscapacity.last(0)}&lt;60</expression>
+            <name>Capacidade Baterias menor que 60 %</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>Alerta se Item for menor que 60</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template Nobreaks UPS:upsfreqentrada.last(0)}&gt;80</expression>
+            <name>Frequência de entrada maior que 80 Hz</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>Alerta se Item for maior que 80 Hz</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template Nobreaks UPS:upsfreqentrada.last(0)}&gt;90</expression>
+            <name>Frequência de entrada maior que 90 Hz</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description>Alerta se Item for maior que 90 Hz</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template Nobreaks UPS:upsfreqentrada.last(0)}&lt;20</expression>
+            <name>Frequência de entrada menor que 20 Hz</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description>Alerta se Item for menor que 20 Hz</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template Nobreaks UPS:upsfreqentrada.last(0)}&lt;40</expression>
+            <name>Frequência de entrada menor que 40 Hz</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>Alerta se Item for menor que 40 Hz</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template Nobreaks UPS:upsload.last(0)}&gt;60</expression>
+            <name>Load maior que 60 %</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>Alerta se Item Load ultrapassar 60%</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template Nobreaks UPS:upsload.last(0)}&gt;85</expression>
+            <name>Load maior que 85 %</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description>Alerta se Item Load ultrapassar 85%</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template Nobreaks UPS:upstemp.last(0)}&gt;40</expression>
+            <name>Temperatura maior que 40 C</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>Alerta se Item Load ultrapassar 40 C</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template Nobreaks UPS:upstemp.last(0)}&gt;60</expression>
+            <name>Temperatura maior que 60 C</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description>Alerta se Item Load ultrapassar 60 C</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template Nobreaks UPS:upstensaoentrada.last(0)}&gt;240</expression>
+            <name>Tensão de entrada maior que 240 V</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>Alerta se Item for maior que 240 V</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template Nobreaks UPS:upstensaoentrada.last(0)}&gt;280</expression>
+            <name>Tensão de entrada maior que 280 V</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description>Alerta se Item for maior que 280 V</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template Nobreaks UPS:upstensaoentrada.last(0)}&lt;180</expression>
+            <name>Tensão de entrada menor que 180 V</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description>Alerta se Item for menor que 180 V</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template Nobreaks UPS:upstensaoentrada.last(0)}&lt;200</expression>
+            <name>Tensão de entrada menor que 200 V</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>Alerta se Item for menor que 200 V</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template Nobreaks UPS:upstensaosaida.last(0)}&gt;130</expression>
+            <name>Tensão de saida maior que 130 V</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>Alerta se Item for menor que 130 V</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template Nobreaks UPS:upstensaosaida.last(0)}&gt;140</expression>
+            <name>Tensão de saida maior que 140 V</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description>Alerta se Item for menor que 140 V</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template Nobreaks UPS:upstensaosaida.last(0)}&lt;100</expression>
+            <name>Tensão de saida menor que 100 V</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description>Alerta se Item for menor que 100 V</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template Nobreaks UPS:upstensaosaida.last(0)}&lt;110</expression>
+            <name>Tensão de saida menor que 110 V</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>Alerta se Item for menor que 110 V</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+    </triggers>
+    <graphs>
+        <graph>
+            <name>Ups Capacidade Baterias %</name>
+            <width>900</width>
+            <height>200</height>
+            <yaxismin>0.0000</yaxismin>
+            <yaxismax>100.0000</yaxismax>
+            <show_work_period>1</show_work_period>
+            <show_triggers>1</show_triggers>
+            <type>0</type>
+            <show_legend>1</show_legend>
+            <show_3d>0</show_3d>
+            <percent_left>0.0000</percent_left>
+            <percent_right>0.0000</percent_right>
+            <ymin_type_1>1</ymin_type_1>
+            <ymax_type_1>1</ymax_type_1>
+            <ymin_item_1>0</ymin_item_1>
+            <ymax_item_1>0</ymax_item_1>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>1</drawtype>
+                    <color>00DD00</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template Nobreaks UPS</host>
+                        <key>upscapacity</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Ups Load %</name>
+            <width>900</width>
+            <height>200</height>
+            <yaxismin>0.0000</yaxismin>
+            <yaxismax>100.0000</yaxismax>
+            <show_work_period>1</show_work_period>
+            <show_triggers>1</show_triggers>
+            <type>0</type>
+            <show_legend>1</show_legend>
+            <show_3d>0</show_3d>
+            <percent_left>0.0000</percent_left>
+            <percent_right>0.0000</percent_right>
+            <ymin_type_1>1</ymin_type_1>
+            <ymax_type_1>1</ymax_type_1>
+            <ymin_item_1>0</ymin_item_1>
+            <ymax_item_1>0</ymax_item_1>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>1</drawtype>
+                    <color>FF6666</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template Nobreaks UPS</host>
+                        <key>upsload</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Ups Temperatura C°</name>
+            <width>900</width>
+            <height>200</height>
+            <yaxismin>0.0000</yaxismin>
+            <yaxismax>100.0000</yaxismax>
+            <show_work_period>1</show_work_period>
+            <show_triggers>1</show_triggers>
+            <type>0</type>
+            <show_legend>1</show_legend>
+            <show_3d>0</show_3d>
+            <percent_left>0.0000</percent_left>
+            <percent_right>0.0000</percent_right>
+            <ymin_type_1>1</ymin_type_1>
+            <ymax_type_1>1</ymax_type_1>
+            <ymin_item_1>0</ymin_item_1>
+            <ymax_item_1>0</ymax_item_1>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>1</drawtype>
+                    <color>C80000</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template Nobreaks UPS</host>
+                        <key>upstemp</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Ups Tensão e Frequência</name>
+            <width>900</width>
+            <height>200</height>
+            <yaxismin>0.0000</yaxismin>
+            <yaxismax>100.0000</yaxismax>
+            <show_work_period>1</show_work_period>
+            <show_triggers>1</show_triggers>
+            <type>0</type>
+            <show_legend>1</show_legend>
+            <show_3d>0</show_3d>
+            <percent_left>0.0000</percent_left>
+            <percent_right>0.0000</percent_right>
+            <ymin_type_1>0</ymin_type_1>
+            <ymax_type_1>0</ymax_type_1>
+            <ymin_item_1>0</ymin_item_1>
+            <ymax_item_1>0</ymax_item_1>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>2</drawtype>
+                    <color>C80000</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template Nobreaks UPS</host>
+                        <key>upsfreqentrada</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <drawtype>2</drawtype>
+                    <color>00C800</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template Nobreaks UPS</host>
+                        <key>upsfreqsaida</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <drawtype>2</drawtype>
+                    <color>0000C8</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template Nobreaks UPS</host>
+                        <key>upstensaoentrada</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <drawtype>2</drawtype>
+                    <color>C800C8</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template Nobreaks UPS</host>
+                        <key>upstensaosaida</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+    </graphs>
+</zabbix_export>
