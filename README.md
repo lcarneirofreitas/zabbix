@@ -24,6 +24,4 @@ Realiza o monitoramento através de snmp, itens monitorados:
 
 Este template tambem gera gráficos e trigger para alarmar no caso de problemas.
 
-Dúvidas estou a disposição.
 
-lcarneirofreitas@gmail.com
